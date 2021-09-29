@@ -6,7 +6,7 @@ set $term urxvt #terminal variable
 set $www firefox #browser variable
 
 # font
-font pango:Source Code Pro Bold 9
+font pango:Cantarell Bold 9
 
 # lock screen and suspend at lid-switch (requires xss-lock to be installed)
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 478061 --nofork
@@ -75,7 +75,7 @@ bindsym $mod+d focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: >_"
+set $ws1 "1:term"
 set $ws2 "2:www"
 set $ws3 "3:file"
 set $ws4 "4:doc"
@@ -150,6 +150,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {   
 	status_command i3status -c ~/.config/i3status/i3status.conf
+	font pango:Source Code Pro Bold 9
 	colors {
 	# arc-dark colors
 		#background #383c4a
@@ -186,7 +187,6 @@ exec ~/bato.sh & #battery status notification daemon
 
 # don't focus on pop-up windows
 no_focus [window_role="pop-up"]
-
 for_window [urgent="latest"] focus
 focus_on_window_activation focus 
 
@@ -233,8 +233,17 @@ assign [class="Sxiv"] $ws7
 assign [class="zoom"] $ws10
 
 # adjust brightness
-bindsym Shift+F9 exec xbacklight +10
-bindsym Shift+F8 exec xbacklight -10
+#bindsym Shift+F5 exec brightnessctl s 10-
+#bindsym Shift+F6 exec brightnessctl s +10
+
+#bindsym XF86MonBrightnessDown exec brightnessctl s 10-
+#bindsym XF86MonBrightnessUp exec brightnessctl s +10
+
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5
+
+bindsym Shift+F5 exec xbacklight -dec 5
+bindsym Shift+F6 exec xbacklight -inc 5
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #abc2ab #478061 #ffffff #abc2ab   #abc2ab
