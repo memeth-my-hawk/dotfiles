@@ -52,5 +52,5 @@ URxvt*scrollTtyOutput: false
 URxvt*scrollTtyKeypress: true
 URxvt.scrollBar: false
 URxvt.depth: 32
-URxvt.background: [85]#1a1c1d
+URxvt.background: [100]#1a1c1d
 URxvt.cursorBlink: true

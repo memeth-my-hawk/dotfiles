@@ -2,9 +2,7 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-
 pfetch
-alias ll='ls --color=auto -la'
 PS1='[\u@\h \W]\$ '
 alias ping='ping voidlinux.org'
 alias remove='sudo xbps-remove -v'
@@ -28,13 +26,16 @@ alias up='cd ..'
 alias shutdown='loginctl poweroff'
 alias poweroff='loginctl poweroff'
 alias reboot='loginctl reboot'
-alias nnn='nnn -Hod'
-alias cc='clear'
+alias n='nnn -Hod'
+alias cl='clear'
 alias svim='sudo vim'
 alias zzz='sudo zzz'
 alias xx='startx'
-alias logs='svlogtail | less'
-alias spt='spotify-tui'
+alias logs='sudo svlogtail'
+alias spt='spotifyd && spotify-tui'
 alias updatedb='sudo updatedb'
 alias wttr='curl wttr.in'
 alias btt='bluetoothctl'
+alias ll='ls --color=auto -la'
+alias ht='htop'
+alias bat='acpi -V'
