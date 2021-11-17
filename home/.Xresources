@@ -19,9 +19,9 @@ URxvt*background: #1a1c1d
 !
 URxvt*color0:    #262626
 URxvt*color1:    #e60000
-URxvt*color2:    #488466
+URxvt*color2:    #31bd77
 URxvt*color3:    #999900
-URxvt*color4:    #4d94ff
+URxvt*color4:    #3786e6
 URxvt*color5:    #8000ff
 URxvt*color6:    #33cccc
 URxvt*color7:    #ffffff
@@ -38,9 +38,9 @@ URxvt*color7:    #ffffff
 !
 URxvt*color8:    #595959
 URxvt*color9:    #ff3333
-URxvt*color10:    #5ba480
+URxvt*color10:    #67d69f
 URxvt*color11:    #e6e600
-URxvt*color12:    #0066ff
+URxvt*color12:    #4d94ff
 URxvt*color13:    #9933ff
 URxvt*color14:    #1affff
 URxvt*color15:    #e2e2e2
