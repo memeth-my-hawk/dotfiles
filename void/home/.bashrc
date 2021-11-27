@@ -2,7 +2,6 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-pfetch
 PS1='[\u@\h \W]\$ '
 alias ping='ping voidlinux.org'
 alias remove='sudo xbps-remove -v'
