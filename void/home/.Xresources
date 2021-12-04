@@ -2,7 +2,7 @@ URxvt.font: xft:Source Code Pro:bold:size=9
 Urxvt*allowBoldFonts: true
 URxvt*loginShell: true
 URxvt*vt100*geometry: 80x50
-URxvt*saveLines: 123456
+URxvt*saveLines: 6000
 URxvt*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
 URxvt*eightBitInput: false
 URxvt*foreground: #ffffff
