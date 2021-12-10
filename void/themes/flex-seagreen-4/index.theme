@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Seagreen 4
+Comment=A flexible sea-green theme, variation 4 -- an all-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Seagreen 4
+GtkTheme=flex-seagreen-4
+IconTheme=flexicons-seagreen
+MetacityTheme=flex-dark

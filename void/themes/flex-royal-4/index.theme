@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Royal 4
+Comment=A flexible royal-blue theme, variation 4 -- an all-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Royal 4
+GtkTheme=flex-royal-4
+IconTheme=flexicons-royal
+MetacityTheme=flex-dark

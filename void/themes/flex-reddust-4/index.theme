@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Reddust 4
+Comment=A flexible red theme, variation 4 -- an all-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Reddust 4
+GtkTheme=flex-reddust-4
+IconTheme=flexicons-red
+MetacityTheme=flex-darkdust

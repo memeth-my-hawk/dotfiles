@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Magenta 3
+Comment=A flexible magenta theme, variation 3 -- a Shiki-Colors remake
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Magenta 3
+GtkTheme=flex-magenta-3
+IconTheme=flexicons-magenta
+MetacityTheme=flex-dark

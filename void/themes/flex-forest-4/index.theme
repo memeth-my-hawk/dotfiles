@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Forest 4
+Comment=A flexible dark green theme, variation 4 -- an all-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Forest 4
+GtkTheme=flex-forest-4
+IconTheme=flexicons-forest
+MetacityTheme=flex-dark

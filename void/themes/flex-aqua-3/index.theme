@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Aqua 3
+Comment=A flexible aqua theme, variation 3 -- a Shiki-Colors remake
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Aqua 3
+GtkTheme=flex-aqua-3
+IconTheme=flexicons-aqua
+MetacityTheme=flex-dark

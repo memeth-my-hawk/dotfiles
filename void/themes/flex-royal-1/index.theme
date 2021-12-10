@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Royal 1
+Comment=A flexible royal-blue theme, variation 1 -- all-light w/ dark panels
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Royal 1
+GtkTheme=flex-royal-1
+IconTheme=flexicons-royal
+MetacityTheme=flex-light

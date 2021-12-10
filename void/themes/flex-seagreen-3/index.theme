@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Seagreen 3
+Comment=A flexible sea-green theme, variation 3 -- a Shiki-Colors remake
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Seagreen 3
+GtkTheme=flex-seagreen-3
+IconTheme=flexicons-seagreen
+MetacityTheme=flex-dark

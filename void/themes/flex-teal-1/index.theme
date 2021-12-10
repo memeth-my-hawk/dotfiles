@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Teal 1
+Comment=A flexible teal theme, variation 1 -- all-light w/ dark panels
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Teal 1
+GtkTheme=flex-teal-1
+IconTheme=flexicons-teal
+MetacityTheme=flex-light

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Maroon 3
+Comment=A flexible maroon theme, variation 3 -- a Shiki-Colors remake
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Maroon 3
+GtkTheme=flex-maroon-3
+IconTheme=flexicons-maroon
+MetacityTheme=flex-dark

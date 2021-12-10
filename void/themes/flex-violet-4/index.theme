@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Violet 4
+Comment=A flexible violet theme, variation 4 -- an all-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Violet 4
+GtkTheme=flex-violet-4
+IconTheme=flexicons-violet
+MetacityTheme=flex-dark

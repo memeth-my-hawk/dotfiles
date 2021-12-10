@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Greendust 4
+Comment=A flexible green theme, variation 4 -- an all-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Greendust 4
+GtkTheme=flex-greendust-4
+IconTheme=flexicons-green
+MetacityTheme=flex-darkdust

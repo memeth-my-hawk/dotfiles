@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Pink 3
+Comment=A flexible pink theme, variation 3 -- a Shiki-Colors remake
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Pink 3
+GtkTheme=flex-pink-3
+IconTheme=flexicons-pink
+MetacityTheme=flex-dark

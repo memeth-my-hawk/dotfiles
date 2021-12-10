@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Yellow 4
+Comment=A flexible yellow theme, variation 4 -- an all-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Yellow 4
+GtkTheme=flex-yellow-4
+IconTheme=flexicons-yellow
+MetacityTheme=flex-dark

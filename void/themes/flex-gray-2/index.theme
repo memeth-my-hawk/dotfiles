@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Gray 2
+Comment=A flexible gray theme, variation 2 -- a light theme w/ dark panels and dark menus
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Gray 2
+GtkTheme=flex-gray-2
+IconTheme=flexicons-gray
+MetacityTheme=flex-light

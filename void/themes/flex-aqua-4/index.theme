@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Aqua 4
+Comment=A flexible aqua theme, variation 4 -- an all-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Aqua 4
+GtkTheme=flex-aqua-4
+IconTheme=flexicons-aqua
+MetacityTheme=flex-dark

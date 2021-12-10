@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Gray 4
+Comment=A flexible gray theme, variation 4 -- an all-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Gray 4
+GtkTheme=flex-gray-4
+IconTheme=flexicons-gray
+MetacityTheme=flex-dark

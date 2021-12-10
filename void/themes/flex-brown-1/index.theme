@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Brown 1
+Comment=A flexible brown theme, variation 1 -- all-light w/ dark panels
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Brown 1
+GtkTheme=flex-brown-1
+IconTheme=flexicons-brown
+MetacityTheme=flex-lightdust

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Forest 3
+Comment=A flexible dark green theme, variation 3 -- a Shiki-Colors remake
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Forest 3
+GtkTheme=flex-forest-3
+IconTheme=flexicons-forest
+MetacityTheme=flex-dark

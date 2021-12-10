@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Yellow 2
+Comment=A flexible yellow theme, variation 2 -- a light theme w/ dark panels and dark menus
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Yellow 2
+GtkTheme=flex-yellow-2
+IconTheme=flexicons-yellow
+MetacityTheme=flex-light

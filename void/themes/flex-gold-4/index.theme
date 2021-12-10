@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Gold 4
+Comment=A flexible gold theme, variation 4 -- an all-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Gold 4
+GtkTheme=flex-gold-4
+IconTheme=flexicons-gold
+MetacityTheme=flex-dark

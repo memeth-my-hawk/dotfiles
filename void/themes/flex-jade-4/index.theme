@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Jade 4
+Comment=A flexible jade-green theme, variation 4 -- an all-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Jade 4
+GtkTheme=flex-jade-4
+IconTheme=flexicons-jade
+MetacityTheme=flex-dark

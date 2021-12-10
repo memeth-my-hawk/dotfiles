@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Golddust 3
+Comment=A flexible gold theme, variation 3 -- a Shiki-Colors remake
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Golddust 3
+GtkTheme=flex-golddust-3
+IconTheme=flexicons-gold
+MetacityTheme=flex-darkdust

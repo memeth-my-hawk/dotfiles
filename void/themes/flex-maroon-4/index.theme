@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Maroon 4
+Comment=A flexible maroon theme, variation 4 -- an all-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Maroon 4
+GtkTheme=flex-maroon-4
+IconTheme=flexicons-maroon
+MetacityTheme=flex-dark

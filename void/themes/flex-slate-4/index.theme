@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Slate 4
+Comment=A flexible slate-blue theme, variation 4 -- an all-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Slate 4
+GtkTheme=flex-slate-4
+IconTheme=flexicons-slate
+MetacityTheme=flex-dark

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Magenta 2
+Comment=A flexible magenta theme, variation 2 -- a light theme w/ dark panels and dark menus
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Magenta 2
+GtkTheme=flex-magenta-2
+IconTheme=flexicons-magenta
+MetacityTheme=flex-light

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Orangedust 4
+Comment=A flexible orange theme, variation 4 -- an all-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Orangedust 4
+GtkTheme=flex-orangedust-4
+IconTheme=flexicons-orange
+MetacityTheme=flex-darkdust

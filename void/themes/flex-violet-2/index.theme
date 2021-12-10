@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flex Violet 2
+Comment=A flexible violet theme, variation 2 -- a light theme w/ dark panels and dark menus
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Flex Violet 2
+GtkTheme=flex-violet-2
+IconTheme=flexicons-violet
+MetacityTheme=flex-light
