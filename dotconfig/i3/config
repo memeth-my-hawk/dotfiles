@@ -34,7 +34,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+m exec dmenu_run -nb '#1a1c1d' -sf '#ffffff' -sb '#478061' -nf '#abc2ab' -fn 'Source Code Pro:Bold:pixelsize=11'
 
 #### change focus ####
-bindsym $mod+Tab focus left
+bindsym $mod+Tab focus right
 bindsym $mod+Shift+Tab focus down
 
 #### alternatively, you can use the cursor keys #### 
@@ -75,6 +75,9 @@ bindsym $mod+a focus parent
 
 #### focus the child container ####
 bindsym $mod+d focus child
+
+#### switch between tiled, stacked and tabbed layouts ####
+bindsym $mod+x layout toggle
 
 #### Define names for default workspaces for which we configure key bindings later on. ####
 #### We use variables to avoid repeating the names in multiple places. ####
