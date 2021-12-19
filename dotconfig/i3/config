@@ -267,6 +267,8 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 4
 bindsym Shift+F5 exec xbacklight -dec 4
 bindsym Shift+F6 exec xbacklight -inc 4
 
+
+#### window colors ####
 # class                 border  backgr. text    indicator child_border
 client.focused          #abc2ab #478061 #ffffff #306146   #abc2ab
 client.focused_inactive #1a1c1d #1a1c1d #ffffff #1a1c1d   #1a1c1d
