@@ -84,13 +84,13 @@ bindsym $mod+x layout toggle
 set $ws1 "1:term"
 set $ws2 "2:files"
 set $ws3 "3:code"
-set $ws4 "4:doc1"
-set $ws5 "5:doc2"
-set $ws6 "6:doc3"
-set $ws7 "7:web"
-set $ws8 "8:media"
-set $ws9 "9:comms"
-set $ws10 "10:ps"
+set $ws4 "4:docs"
+set $ws5 "5:web"
+set $ws6 "6:media"
+set $ws7 "7:comms"
+set $ws8 "8:ps"
+set $ws9 "9:"
+set $ws10 "10:"
 
 #### switch to workspace ####
 bindsym $mod+1 workspace number $ws1
@@ -245,16 +245,16 @@ for_window [floating] move absolute position center
 for_window [class="zoom"] floating enable
 
 #### assign windows to specific workspaces ####
-#assign [class="Zathura"] $ws3
 #assign [class="MuPDF"] $ws3
 #assign [class="libreoffice-startcenter"] $ws3
 assign [class="Code - OSS"] $ws3
-assign [class="Firefox"] $ws7
-assign [class="feh"] $ws8
-assign [class="mpv"] $ws8
-assign [class="discord"] $ws9
-assign [class="Signal"] $ws9
-assign [class="zoom"] $ws9
+assign [class="Zathura"] $ws4
+assign [class="Firefox"] $ws5
+assign [class="feh"] $ws6
+assign [class="mpv"] $ws6
+assign [class="discord"] $ws7
+assign [class="Signal"] $ws7
+assign [class="zoom"] $ws7
 
 
 #### adjust brightness ####
