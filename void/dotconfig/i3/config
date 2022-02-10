@@ -1,0 +1,279 @@
+## memeth's i3wm config file ##
+
+#### variables ####
+set $mod Mod4
+
+#### font ####
+font pango:Source Code Pro Bold 9
+
+#### lock screen and suspend at lid-switch (requires xss-lock to be installed) ####
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 1A1C1D --nofork
+ 
+#### Use pactl or amixer to adjust volume. ####
+set $refresh_i3status killall -SIGUSR1 i3status
+
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
+#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+#bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+ && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%- && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle && $refresh_i3status
+
+#### Use Mouse+$mod to drag floating windows to their wanted position ####
+floating_modifier $mod
+
+#### start a terminal ####
+bindsym $mod+Return exec alacritty --config-file ~/.config/alacritty/alacritty.yml
+
+#### kill focused window ####
+bindsym $mod+Shift+q kill
+
+#### launch dmenu with void-colors #### 
+bindsym $mod+m exec dmenu_run -nb '#1a1c1d' -sf '#ffffff' -sb '#478061' -nf '#abc2ab' -fn 'Source Code Pro:Bold:pixelsize=11'
+
+#### change focus ####
+bindsym $mod+Tab focus right
+bindsym $mod+Shift+Tab focus down
+
+#### alternatively, you can use the cursor keys #### 
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+#### move focused window ####
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+#### alternatively, you can use the cursor keys ####
+bindsym $mod+Shift+Left move left
+bindsym $mods+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+#### split in horizontal orientation ####
+bindsym $mod+h split h
+
+#### split in vertical orientation ####
+bindsym $mod+v split v
+
+#### enter fullscreen mode for the focused container ####
+#bindsym $mod+f fullscreen toggle
+
+#### toggle tiling / floating ####
+bindsym $mod+f floating toggle
+
+#### change focus between tiling / floating windows ####
+bindsym $mod+Shift+f focus mode_toggle
+
+#### focus the parent container ####
+bindsym $mod+a focus parent
+
+#### focus the child container ####
+bindsym $mod+d focus child
+
+#### switch between tiled, stacked and tabbed layouts ####
+bindsym $mod+x layout toggle
+
+#### Define names for default workspaces for which we configure key bindings later on. ####
+#### We use variables to avoid repeating the names in multiple places. ####
+set $ws1 "1:term"
+set $ws2 "2:files"
+set $ws3 "3:code"
+set $ws4 "4:docs"
+set $ws5 "5:web"
+set $ws6 "6:media"
+set $ws7 "7:comms"
+set $ws8 "8:ps"
+set $ws9 "9:"
+set $ws10 "10:"
+
+#### switch to workspace ####
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+#### move focused container to workspace ####
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+#### reload the configuration file ####
+bindsym $mod+Shift+c reload
+
+#### restart i3 inplace (preserves your layout/session, can be used to upgrade i3) ####
+bindsym $mod+Shift+r restart
+
+#### exit i3 (logs you out of your X session) ####
+#bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+#### resize window (you can also use the mouse for that) ####
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+#### Start i3bar to display a workspace bar (plus the system information i3status ####
+#### finds out, if available) ####
+bar {   
+	status_command i3status -c ~/.config/i3status/i3status.conf
+	font pango:Source Code Pro Bold 8
+	colors {
+	# arc-dark colors
+		#background #383c4a
+		#statusline #ffffff
+		#separator #ffffff
+		#focused_workspace #4b5162 #5294e2 #ffffff
+		#inactive_workspace #4b5162 #404552 #d3dae3
+	
+	# void-dark colors
+		background #1a1c1d
+		statusline #abc2ab
+		separator #cccccc
+		focused_workspace #91a491 #478061 #1a1c1d
+		inactive_workspace #91a491 #1a1c1d #abc2ab
+
+	}
+}
+
+
+#### autostart ####
+
+# keyboard layout
+exec setxkbmap tr 
+ 
+# compositor
+exec picom --config ~/.config/picom.conf 
+
+# notification daemon
+exec dunst -config /home/memeth/.config/dunstrc 
+
+# blue light filter
+exec redshift 
+
+# wallpaper
+exec ~/.fehbg 
+
+# battery notifications
+exec batsignal -b -e 
+
+#### remove window titlebars, set border thickness ####
+#new_window 1pixel
+#for_window [class="^.*"] border pixel 1
+
+#### don't focus on pop-up windows ####
+no_focus [window_role="pop-up"]
+for_window [urgent="latest"] focus
+focus_on_window_activation focus 
+
+#### some custom keybindings ####
+bindsym $mod+w exec firefox
+bindsym Print exec scrot -q 100 ~/Pictures/%d-%m-%Y-%T-screenshot.png
+bindsym $mod+z exec i3lock -c 1A1C1D
+
+#### logout ui/menu ####
+#mode "[l]ogout, [r]eboot, [p]oweroff, [s]uspend" {
+
+#  bindsym l exec i3-msg exit
+#  bindsym r exec loginctl reboot
+#  bindsym p exec loginctl poweroff
+#  bindsym s exec loginctl suspend
+#  bindsym Escape mode "default"
+#  bindsym Return mode "default"
+#}
+#bindsym $mod+Escape mode "[l]ogout, [r]eboot, [p]oweroff, [s]uspend"
+
+#### alternative logout method ####
+#bindsym $mod+Escape exec i3-msg exit
+
+#### another alternative logout method ####
+mode "logout? (Y/n)" {
+	bindsym y exec i3-msg exit
+	bindsym n mode "default"
+	bindsym Escape mode "default"
+	bindsym Return exec i3-msg exit
+}
+bindsym $mod+Escape mode "logout? (Y/n)"
+
+#### define max and min floating window sizes ####
+floating_minimum_size 400 x 250
+floating_maximum_size 1280 x 720
+
+#### always center floating windows ####
+for_window [floating] move absolute position center
+
+#### rule for zoom ####
+for_window [class="zoom"] floating enable
+
+#### assign windows to specific workspaces ####
+#assign [class="MuPDF"] $ws3
+#assign [class="libreoffice-startcenter"] $ws3
+assign [class="Code - OSS"] $ws3
+assign [class="Zathura"] $ws4
+assign [class="Firefox"] $ws5
+assign [class="feh"] $ws6
+assign [class="mpv"] $ws6
+assign [class="discord"] $ws7
+assign [class="Signal"] $ws7
+assign [class="zoom"] $ws7
+
+
+#### adjust brightness ####
+#bindsym Shift+F5 exec brightnessctl s 10-
+#bindsym Shift+F6 exec brightnessctl s +10
+
+#bindsym XF86MonBrightnessDown exec brightnessctl s 10-
+#bindsym XF86MonBrightnessUp exec brightnessctl s +10
+
+bindsym XF86MonBrightnessDown exec xbacklight -dec 4
+bindsym XF86MonBrightnessUp exec xbacklight -inc 4
+
+bindsym Shift+F5 exec xbacklight -dec 4
+bindsym Shift+F6 exec xbacklight -inc 4
+
+
+#### window colors ####
+# class                 border  backgr. text    indicator child_border
+client.focused          #abc2ab #478061 #ffffff #306146   #abc2ab
+client.focused_inactive #1a1c1d #1a1c1d #ffffff #1a1c1d   #1a1c1d
+client.unfocused        #1a1c1d #1a1c1d #888888 #1a1c1d   #1a1c1d
+
