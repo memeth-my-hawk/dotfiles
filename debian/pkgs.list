@@ -1,1 +1,1 @@
-sudo apt install htop i3 xorg firefox-esr pulseaudio alsa-utils pulsemixer rxvt-unicode nnn xss-lock vim feh libreoffice cups cups-filters curl gcc ufw hplip ntfs-3g redshift mpv picom zathura zathura-pdf-poppler scrot irssi trash-cli brightnessctl acpi tree
+sudo apt install htop i3 xorg firefox-esr pulseaudio alsa-utils pulsemixer rxvt-unicode nnn xss-lock vim feh libreoffice cups cups-filters curl gcc ufw hplip ntfs-3g redshift mpv picom zathura zathura-pdf-poppler scrot irssi trash-cli brightnessctl acpi tree pulseaudio-module-bluetooth
