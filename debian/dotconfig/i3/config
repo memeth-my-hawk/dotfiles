@@ -8,7 +8,7 @@ font pango:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 6
+#font pango:DejaVu Sans Mono 8 
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -32,7 +32,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt 
+bindsym $mod+Return exec xterm 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -173,6 +173,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status -c ~/.config/i3/i3status.conf
+
 }
 
 # Custom hotkeys
@@ -184,7 +185,7 @@ bindsym $mod+w exec firefox
 exec setxkbmap tr
 exec picom --config ~/.config/picom.conf
 exec redshift -c ~/.config/redshift.conf
-exec feh --bg-fill --randomize ~/debian-wallpaper/*
+exec feh --bg-fill --randomize ~/dotfiles/debian/debian-wallpaper/*
 
 # Logout menu
 mode "[l]ogout, [r]eboot, [p]oweroff, [s]uspend" {
@@ -212,3 +213,5 @@ bindsym Shift+F5 exec brightnessctl s 10-
 bindsym Shift+F6 exec brightnessctl s +10
 bindsym XF86MonBrightnessDown exec brightnessctl s 10-
 bindsym XF86MonBrightnessUp exec brightnessctl s +10
+
+

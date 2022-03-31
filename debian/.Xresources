@@ -1,4 +1,15 @@
-URxvt*font: xft:monospace:size=9:antialias:false
+XTerm*faceName: xft:monospace:size=8
+XTerm*foreground: #ffffff
+XTerm*background: #000000
+XTerm*allowBoldFonts: true
+XTerm*saveLines: 6000
+XTerm*scrollTtyOutput: false
+XTerm*scrollTtyKeypress: true
+XTerm*scrollBar: false
+XTerm*cursorBlink: true
+
+
+URxvt*font: xft:monospace:size=8:antialias:false
 URxvt.letterSpace: -1
 URxvt*allowBoldFonts: true
 URxvt*loginShell: true
@@ -6,8 +17,17 @@ URxvt*vt100*geometry: 80x50
 URxvt*saveLines: 6000
 URxvt*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
 URxvt*eightBitInput: false
+URxvt*boldMode: true
+URxvt*colorBDMode: true
+URxvt*colorBD: rgb:fc/fc/fc
+URxvt*scrollTtyOutput: false
+URxvt*scrollTtyKeypress: true
+URxvt*scrollBar: false
+URxvt*depth: 32
+URxvt*cursorBlink: true
 URxvt*foreground: #ffffff
 URxvt*background: #000000
+
 ! Normal
 ! color0    black
 ! color1    red
@@ -46,11 +66,4 @@ URxvt*color13:    #996bc7
 URxvt*color14:    #1affff
 URxvt*color15:    #e2e2e2
 
-URxvt*boldMode: true
-URxvt*colorBDMode: true
-URxvt*colorBD: rgb:fc/fc/fc
-URxvt*scrollTtyOutput: false
-URxvt*scrollTtyKeypress: true
-URxvt*scrollBar: false
-URxvt*depth: 32
-URxvt*cursorBlink: true
+
