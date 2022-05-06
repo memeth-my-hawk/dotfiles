@@ -1,0 +1,13 @@
+*distro install checklist*
+- clone dotfiles repo
+- install packages
+- copy dotfiles
+- configure swappiness
+- configure grub
+- enable firewall
+- enable tlp
+- enable flatpak
+- copy documents from backup
+- xorg conf: touchpad (not crucial but still), radeon conf, keyboard layout
+- proper firefox settings (including about config stuff from reddit), tridactyl
+
