@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/memeth/.gtkrc-2.0.mine"
-gtk-theme-name="Arc-Dark"
-gtk-icon-theme-name="Papirus-Dark"
+gtk-theme-name="Arc-Lighter"
+gtk-icon-theme-name="Papirus-Light"
 gtk-font-name="Cantarell 10"
 gtk-cursor-theme-name="Adwaita"
 gtk-cursor-theme-size=0

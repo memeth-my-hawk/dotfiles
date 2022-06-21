@@ -9,7 +9,7 @@ font pango:Noto Sans Mono 9
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 383C4A --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 5294E2 --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -193,7 +193,7 @@ bar {
 
 # Custom hotkeys
 bindsym Print exec scrot -q 100 ~/Pictures/%d-%m-%Y-%T-screenshot.png
-bindsym $mod+z exec i3lock -c 383C4A
+bindsym $mod+z exec i3lock -c 5294E2
 bindsym $mod+w exec firefox
 
 # Autostart
@@ -201,6 +201,7 @@ exec setxkbmap tr
 exec picom --config /home/memeth/.config/picom.conf
 exec redshift -c ~/.config/redshift.conf
 exec feh --bg-fill --randomize ~/wallpapers/debian-wallpaper/*
+exec blueman-applet
 
 # Logout menu
 mode "[l]ogout, [r]eboot, [p]oweroff, [s]uspend" {
