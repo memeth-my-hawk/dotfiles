@@ -201,7 +201,6 @@ exec setxkbmap tr
 exec picom --config /home/memeth/.config/picom.conf
 exec redshift -c ~/.config/redshift.conf
 exec feh --bg-fill --randomize ~/wallpapers/debian-wallpaper/*
-exec blueman-applet
 
 # Logout menu
 mode "[l]ogout, [r]eboot, [p]oweroff, [s]uspend" {
